@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,56 +10,57 @@
 
     <h2>HTML Pratical 1 - Complex Table</h2>
     
-    <table border="1" style="margin: 100px 25%">
+    <!-- Correction= cellpadding: "Allow space out the bricks and the fonts to be cleaner and so less compress; cellspacing: "Allow space out the cells between them" at the bottom -->
+    <table border="1" cellpadding="6" cellspacing="5" style="margin: 100px 25%">
         <thead>
             <tr>
-                <th style="padding: 15px 10px">Entreprise</th>
-                <th style="padding: 15px 10px">Division</th>
-                <th style="padding: 15px 10px">Ref</th>
-                <th style="padding: 15px 10px">Franchise</th>
-                <th style="padding: 15px 10px">Employés</th>
-                <th style="padding: 0px 20px; text-align: center">CA (en millions d'€)</th>
+                <th>Entreprise</th>
+                <th>Division</th>
+                <th>Ref</th>
+                <th>Franchise</th>
+                <th>Employés</th>
+                <th>CA (en millions d'€)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td rowspan="6" style="padding: 0px 10px">Google</td>
-                <td rowspan="5" style="padding: 0px 10px; text-align: center">Google Ltd.</td>
-                <td rowspan="3" style="padding: 0px 10px">YT</td>
-                <td style="padding: 5px 10px">ADS</td>
-                <td style="padding: 5px 10px">1052</td>
-                <td style="padding: 5px 10px">10,7</td>
+                <td rowspan="6">Google</td>
+                <td rowspan="5">Google Ltd.</td>
+                <td rowspan="3">YT</td>
+                <td>ADS</td>
+                <td>1052</td>
+                <td>10,7</td>
             </tr>
             <tr>
-                <td style="padding: 5px 10px">BIO</td>
-                <td style="padding: 5px 10px">204</td>
-                <td style="padding: 5px 10px">150.1</td>
+                <td>BIO</td>
+                <td>204</td>
+                <td>150.1</td>
             </tr>
             <tr>
-                <td style="padding: 5px 10px">CSI</td>
-                <td style="padding: 5px 10px">3543</td>
-                <td style="padding: 5px 10px">60.0</td>
+                <td>CSI</td>
+                <td>3543</td>
+                <td>60.0</td>
             </tr>
             <tr>
-                <td rowspan="2" style="padding: 0px 10px">MAP</td>
-                <td style="padding: 5px 10px">ADS</td>
-                <td style="padding: 5px 10px">48</td>
-                <td style="padding: 5px 10px">10.7</td>
+                <td rowspan="2">MAP</td>
+                <td>ADS</td>
+                <td>48</td>
+                <td>10.7</td>
             </tr>
             <tr>
-                <td style="padding: 5px 10px">BIO</td>
-                <td style="padding: 5px 10px">5471</td>
-                <td style="padding: 5px 10px">15.8</td>
+                <td>BIO</td>
+                <td>5471</td>
+                <td>15.8</td>
             </tr>
             <tr>
-                <td colspan="3" style="padding: 5px 10px">TOTAL</td>
-                <td style="padding: 5px 10px">10318</td>
-                <td style="padding: 5px 10px">247.3</td>
+                <td colspan="3">TOTAL</td>
+                <td>10318</td>
+                <td>247.3</td>
             </tr>
         </tbody>
     </table>
 
-    <h2>HTML Pratical 2 - Incorporate a Simple Mock-up</h2>
+    <h2>HTML Pratical 2 - Incorporate a Simple Mock-up (Thanks to "maquette_helium.png")</h2>
 
     <nav>
         <h3>Helium</h3>
@@ -71,32 +72,40 @@
     </nav>
 
     <main>
-        <div>
-            <h2>People-Powered Networks</h2>
-            <strong>Start a Wireless Revolution</strong>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sint corrupti facere asperiores aspernatur maxime omnis laudantium officia debitis soluta. Omnis alias nostrum dignissimos odit ipsum accusantium officia eum id.</p>
+        <!-- Correction= "Two divs with <class> allow for better handling the area in question (for us the side main-left)" at the bottom -->
+        <div class="main-left">
+            <div class="main-left-container">
+                <h3>People-Powered Networks</h3>
+                <h5>Start a Wireless Revolution</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sint corrupti facere asperiores aspernatur maxime omnis laudantium officia debitis soluta. Omnis alias nostrum dignissimos odit ipsum accusantium officia eum id.</p>
+            </div>
         </div>
-        <img src="./img/main.png" alt="The Wireless Revolution" width="30%">
+        <div class="main-right">
+            <img src="./img/main.png" alt="The Wireless Revolution" width="30%">
+        </div>
     </main>
 
-    <footer>
-        <div>
+    <section class="proto_footer">
+        <div class="proto_footer_left">
             <h4>Core Technologies</h4>
-            <ul>
-                <li>Tokens</li>
-                <li>Proof of coverage</li>
-                <li>LongFI</li>
-            </ul>
+            <div class="btn-container">
+                <button>Tokens</button>
+                <button>Proof of coverage</button>
+                <button>LongFI</button>
+            </div>
         </div>
-        <div>
+        <div class="proto_footer_right">
             <h4>Our investors</h4>
-            <ul style="background-color: black">
-                <li><img src="./img/investlogo2.png" alt="1st of our Investor"></li>
-                <li><img src="./img/investlogo3.png" alt="2nd of our Investor"></li>
-                <li><img src="./img/investlogo4.png" alt="3rd of our Investor"></li>
-            </ul>
+            <!-- Corretion= "Same thing as main-left atop but with images" for the bottom -->
+            <div class="investor">
+                <div class="investor-container" style="background-color: black">
+                    <img src="./img/investlogo2.png" alt="1st of our Investor">
+                    <img src="./img/investlogo3.png" alt="2nd of our Investor">
+                    <img src="./img/investlogo4.png" alt="3rd of our Investor">
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>
