@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratical</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -118,22 +120,25 @@
             <li>institute of technology</li>
             <li>newsroom</li>
             <li>parents</li>
-            <li>FR|EN</li>
+            <li id="language">FR|EN</li>
         </ul>
     </nav>
 
     <header>
         <div class="header-container">
-            <img src="./master_front_end/assets/logo-gc-hero.png" alt="Logo Gaming Campus Home" style="background-color: rgb(158, 156, 154);">
+            <div id="logo">
+                <img src="./master_front_end/assets/logo-gc-hero.png" alt="Logo Gaming Campus Home" style="background-color: rgb(158, 156, 154);">
+            </div>
             <h3>Passion. Professionalism. Performance.</h3>
-            <button>gaming campus in video ></button>
+            <button>gaming campus in video <i class="fa-solid fa-angle-right"></i></button>
         </div>
     </header>
 
-    <aside>
+    <div class="header-text">
         <p>Imagined by professionnals of video games and education, Gaming Campus is a special place to reveal talents and develop skills.</p>
-    </aside>
+    </div>
 
+    <!-- in the bottom= no correction yet, sorry :/ -->
     <section>
         <div class="activity-container">
             <div class="school_activity">
@@ -266,6 +271,19 @@
             <img src="./master_front_end/assets/vitality.png" alt="Vitality">
         </div>
     </address>
+
+    <h2 style="margin-top: 10rem;"><u>To finish:</u></h2>
+
+    <span style="color: rgb(255, 0, 0);">How use "Font Awesome" to add free icons on your website?</span>
+
+    <ol>
+        <li>Incorporate its library on your code in search: "cdn (mean «content delivery network» to speeds up webpage loading for data-heavy applications) font awesome"</li>
+        <li>Copy this first purpose by default. Type "all.min.css" to the end, in "Link Tag" of course </li>
+        <li>Paste this "Ling Tag" underneath of < title > of your code</li>
+        <li>Next, go to the website: "https://fontawesome.com/"</li>
+        <li>Choose your icon and like to cdn copy in HTML, but this time, paste exactly where must be the icon in your website</li>
+        <li>Finish</li>
+    </ol>
 
 </body>
 </html>
